@@ -1,0 +1,313 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="assets/img/et_logo.png">
+    <title>Ethio Tour</title>
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/script.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>
+                    <a href="/">
+                        <h1 style="color: #009669;">Ethio</h1>
+                        <h1 style="color: black;">Tour</h1>
+                    </a>
+                </h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hotels.html">Hotel</a>
+                </li>
+                <li class="user">
+                    <button onmouseleave="document.querySelector('#placeContent').style.display = 'none'" onclick="document.querySelector('#placeContent').style.display = 'block'" class="App__user">
+                            <span class="App__username">Place</span>
+                            <div class="App__expand-arrow">
+                                <svg role="img" height="16" width="16" viewBox="0 0 16 16">
+                                    <path d="M13 10L8 4.206 3 10z" fill="#000"></path>
+                                </svg>
+                            </div>
+                            <div class="content" id="placeContent">
+
+                    <li><a href="recommend">Recommended</a></li>
+                    <li><a href="topten">Top </a></li>
+                    </div>
+                    </button>
+                </li>
+
+                <li class="user"> <a href="/login"> Login</a></li>
+                </li>
+
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const line1 = document.querySelector('.line1');
+        const line2 = document.querySelector('.line2');
+        const line3 = document.querySelector('.line3');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', function() {
+            nav.classList.toggle('nav-active');
+
+        });
+    </script>
+</body>
+
+
+</html>
+<div class="container">
+    <div class="center_content">
+        <div class="h2">
+
+            <h2>discover the
+                <h2 style="color: #009669;">colorful</h2>
+                <h2> world</h2>
+            </h2>
+        </div>
+        <div class="h1">
+
+            <h1 style="color: #009669; margin-right:20px;">
+                Ethio
+                <h1>Tour</h1>
+            </h1>
+        </div>
+
+        <a href="#card"> <button>VIST NOW</button></a>
+    </div>
+</div>
+
+
+<div class="gap"></div>
+
+<form id="search" method="post" action="search">
+    <input name="search" placeholder="search" type="text">
+    <button><img src="assets/img/search.png" alt=""></button>
+
+
+</form>
+
+<div id="card" class="gap"></div>
+
+<div class="Wramp_container">
+    <div class="title-text">
+        <h1>Explore Ethiopia
+            <p>
+                Most popular choices for travelers from Ethiopia
+            </p>
+        </h1>
+
+    </div>
+    <button onclick="prevSlide()" style="opacity: 0;" id="returnBtn" class="btn"> &#10094</button>
+
+    <div class="flex">
+
+
+        <div class="gallery">
+            <img src="assets/img/places/-6047741474268885500_119.jpg " alt="">
+            <a style="text-decoration: none;" href="place.html">
+                    Danakil Depression                     </a>
+            <p> 390km from Addis Ababa </p>
+        </div>
+
+        <div class="gallery">
+            <img src="assets/img/places/-5982177381156237367_119.jpg " alt="">
+            <a style="text-decoration: none;" href="place.html">
+                    Harare                  </a>
+            <p> 503km from Addis Ababa </p>
+        </div>
+
+        <div class="gallery">
+            <img src="assets/img/places/-5948483023416700748_121.jpg " alt="">
+            <a style="text-decoration: none;" href="place.html">
+                    lalibela                 </a>
+            <p> 277km from Addis Ababa </p>
+        </div>
+
+        <div class="gallery">
+            <img src="assets/img/places/-6018448706388471413_121.jpg " alt="">
+            <a style="text-decoration: none;" href="place.html">
+                    Axum                 </a>
+            <p> 572km from Addis Ababa </p>
+        </div>
+
+        <div class="gallery">
+            <img src="assets/img/places/-5797278729825792463_119.jpg " alt="">
+            <a style="text-decoration: none;" href="place.html">
+                    Aksum Tsion                  </a>
+            <p> 572km from Addis Ababa </p>
+        </div>
+
+        <div class="gallery">
+            <img src="assets/img/places/-6022772982541300334_119.jpg " alt="">
+            <a style="text-decoration: none;" href="place.html">
+                    Gonder                  </a>
+            <p> 277km from Addis Ababa </p>
+        </div>
+
+    </div>
+
+    <button onclick="nextSlide()" id="btnPlus" class="btn"> &#10095</button>
+</div>
+
+
+<br><br>
+<div class="conteinerGallery">
+    <div class="title-text">
+
+        <h1>Trending destinations
+            <p>
+                Most popular choices for travelers from Ethiopia
+            </p>
+        </h1>
+    </div>
+    <hr>
+    <div class="filteGallery">
+        <div class="gallerys" data-name="Flower">
+            <img src="assets/img/places/-6047741474268885500_119.jpg " alt="">
+            <h5>
+                Afar </h5>
+
+            <small> Must Popular</small>
+            <div class="gallerys_body">
+                <h1 class="gallerys_title"> <a style="text-transform: uppercase;" href="place.html"> Danakil Depression                             </a>
+                </h1>
+                <hr>
+                <p class="gallerys_txt">390 km from Addis Ababa</p>
+            </div>
+        </div>
+        <div class="gallerys" data-name="Flower">
+            <img src="assets/img/places/-5982177381156237367_119.jpg " alt="">
+            <h5>
+                Harari </h5>
+
+            <small> Must Popular</small>
+            <div class="gallerys_body">
+                <h1 class="gallerys_title"> <a style="text-transform: uppercase;" href="place.html"> Harare                          </a>
+                </h1>
+                <hr>
+                <p class="gallerys_txt">503 km from Addis Ababa</p>
+            </div>
+        </div>
+        <div class="gallerys" data-name="Flower">
+            <img src="assets/img/places/-5948483023416700748_121.jpg " alt="">
+            <h5>
+                Amhara </h5>
+
+            <small> Must Popular</small>
+            <div class="gallerys_body">
+                <h1 class="gallerys_title"> <a style="text-transform: uppercase;" href="place.html"> lalibela                         </a>
+                </h1>
+                <hr>
+                <p class="gallerys_txt">277 km from Addis Ababa</p>
+            </div>
+        </div>
+        <div class="gallerys" data-name="Flower">
+            <img src="assets/img/places/-6018448706388471413_121.jpg " alt="">
+            <h5>
+                Tigray </h5>
+
+            <small> Must Popular</small>
+            <div class="gallerys_body">
+                <h1 class="gallerys_title"> <a style="text-transform: uppercase;" href="place.html"> Axum                         </a>
+                </h1>
+                <hr>
+                <p class="gallerys_txt">572 km from Addis Ababa</p>
+            </div>
+        </div>
+        <div class="gallerys" data-name="Flower">
+            <img src="assets/img/places/-5797278729825792463_119.jpg " alt="">
+            <h5>
+                Tigray </h5>
+
+            <small> Must Popular</small>
+            <div class="gallerys_body">
+                <h1 class="gallerys_title"> <a style="text-transform: uppercase;" href="place.html"> Aksum Tsion                          </a>
+                </h1>
+                <hr>
+                <p class="gallerys_txt">572 km from Addis Ababa</p>
+            </div>
+        </div>
+        <div class="gallerys" data-name="Flower">
+            <img src="assets/img/places/-6022772982541300334_119.jpg " alt="">
+            <h5>
+                Amhara </h5>
+
+            <small> Must Popular</small>
+            <div class="gallerys_body">
+                <h1 class="gallerys_title"> <a style="text-transform: uppercase;" href="place.html"> Gonder                          </a>
+                </h1>
+                <hr>
+                <p class="gallerys_txt">277 km from Addis Ababa</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap">
+</div>
+<hr>
+<script>
+    var ProImage = document.getElementById('ProImage');
+    var count = 0;
+    var imageSours = ['assets/img/places/ ',
+        'assets/img/places/ ',
+        'assets/img/places/ ',
+        'assets/img/places/ '
+    ];
+
+
+    function next() {
+        count++;
+        ProImage.src = imageSours[count];
+        if (count >= imageSours.length) {
+            count = -1;
+        }
+
+    }
+
+    function pre() {
+        count--;
+        ProImage.src = imageSours[count];
+        if (count <= 0) {
+            count = imageSours.length;
+        }
+
+
+    }
+</script>
+
+<div style="height: 180px;" class="gap"></div>
+</div>
+
+
+<div class="dialogContainer">
+    <button onclick="document.querySelector('.dialogContainer').style.display='none'" class="diaBtnX">x</button>
+    <h1>Sign in, save money
+    </h1>
+    <p>You could save 10% or more at this property when you sign in
+    </p>
+    <div class="auth">
+        <a href="login">
+            <button>Sign in </button>
+        </a>
+        <a href="register">create an account</a>
+    </div>
+</div>
+
+
+
+<script src="assets/js/script.js"></script>

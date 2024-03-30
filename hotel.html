@@ -1,0 +1,243 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="assets/img/et_logo.png">
+    <title>Ethio Tour</title>
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/script.js"> </script>
+</head>
+
+<body>        <header>
+            <nav>
+                <div class="logo">
+                    <h1> <a href="/">
+                            <h1 style="color: #009669;">Ethio</h1>
+                            <h1 style="color: black;">Tour</h1>
+                        </a> </h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="hotels">Hotel</a>
+                    </li>
+                    <li class="user">
+                        <button onmouseleave="document.querySelector('#placeContent').style.display = 'none'"
+                            onclick="document.querySelector('#placeContent').style.display = 'block'" class="App__user">
+                            <span class="App__username">Place</span>
+                            <div class="App__expand-arrow">
+                                <svg role="img" height="16" width="16" viewBox="0 0 16 16">
+                                    <path d="M13 10L8 4.206 3 10z" fill="#000"></path>
+                                </svg>
+                            </div>
+                            <div class="content" id="placeContent">
+
+                    <li><a href="recommend">Recommended</a></li>
+                    <li><a href="topten">Top </a></li>
+                    </div>
+                    </button>
+                    </li>
+
+                                        <li class="user"> <a href="/login"> Login</a></li>
+                                        </li>
+
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+                    <script>
+            const burger = document.querySelector('.burger');
+            const line1 = document.querySelector('.line1');
+            const line2 = document.querySelector('.line2');
+            const line3 = document.querySelector('.line3');
+            const nav = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', function() {
+                nav.classList.toggle('nav-active');
+
+            });
+            </script>
+            </body>
+
+
+            </html>
+
+
+
+<div style=" background-image: url('assets/img/hotels/ho5.jpg');" class="profileContainer">
+    <div class="description">
+        
+
+        <div class="descrioText">
+            <a style="text-transform: uppercase;font-size: 30px;"> honney Hotel            </a> <br>
+            <span>
+                <p> Reviews</p>
+            </span>
+
+            <hr>
+            <p> honney Hotel
+
+                                is located in <small style="text-transform: uppercase; margin:0;" href="place?id=41">
+                    Harari </small>
+                <span class="gallerys_txt">503 km from Addis Ababa</span>
+
+            </p>
+
+        </div>
+
+    </div>
+</div>
+<br>
+
+
+<div class="booking">
+    <form method="post">
+        <label for="hotel">
+            <span> <img src="/assets/img/building.svg" alt=""> hotel</span>
+            <input id="hotel" value="honney Hotel" type="text">
+            <input name="hotelId" value="43" type="hidden">
+            <input name="userId" value="" type="hidden">
+        </label>
+        <label for="dateIn">
+            <span> <img src="/assets/img/calendar.svg" alt=""> check-in-date </span>
+            <input id="dateIn" name="dateIn" type="date">
+        </label>
+        <label for="dateOut">
+            <span><img src="/assets/img/calendar.svg" alt=""> check-out-date</span>
+            <input id="dateOut" name="dateOut" type="date">
+        </label>
+        <label for="">
+            <span> <img src="/assets/img/users.svg" alt=""> guests</span>
+            <input id value="1" name="guest" min="1" max="10" type="number">
+        </label>
+        <label for="">
+            <span><img src="/assets/img/door-open.svg" alt=""> room</span>
+            <input value="1" min="1" max="5" name="room" type="number">
+        </label>
+        <input type="submit" name="book" value="check avaliable">
+    </form>
+
+</div>
+
+
+
+
+<div class="underBooking">
+</div>
+
+
+
+
+<div class="conteinerImage">
+    <div class="filteGallery">
+                <div class="gallerys">
+            <img src="assets/img/hotels/-5943861849059602093_119.jpg " alt="">
+
+        </div>
+        <div class="gallerys">
+            <img src="assets/img/hotels/-5948186735097785975_119.jpg " alt="">
+
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+<br>
+<br>
+
+<div style="width: 80%;" class="Wramp_container">
+
+    <div class="flex">
+
+        
+        <div class="gallery">
+
+            <img src="assets/img/hotels/ho5.jpg " alt="">
+
+        </div>
+        <div class="gallery">
+            <img src="assets/img/hotels/-5943861849059602093_119.jpg " alt="">
+
+        </div>
+        <div class="gallery">
+            <img src="assets/img/hotels/-5948186735097785975_119.jpg " alt="">
+        </div>
+        <div class="gallery">
+            <img src="assets/img/hotels/-5943946906591932196_119.jpg " alt="">
+        </div>
+        <div class="gallery">
+            <img src="assets/img/hotels/ho6.jpg " alt="">
+        </div>
+
+        
+    </div>
+
+</div>
+
+<div class="conteinerImage">
+    <div class="filteGallery">
+        <iframe src="https://www.openstreetmap.org/#map=15/9.0319/38.7519" width="600" height="420" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+
+
+<div onmouseleave="leaveFacility()" class="facilityContainer">
+
+    <h1>Facilites</h1>
+    <br>
+
+    <ul>
+
+
+        
+        
+        
+        <li id="list-Items">FREE WIFI</li><li id="list-Items">SPA</li><li id="list-Items">PARKING</li><li id="list-Items">SWIMMING</li><li id="list-Items">TRAVEL</li><li id="list-Items">PLACE</li>
+            </ul>
+    <div class="facilityImage">
+        <img id="facilityImage" src="admin/-5876294389926572076_120.jpg" alt="">
+    </div>
+</div>
+
+
+
+<div class="filterable_cards" id="vis1" style="width:70%;">
+    </div>
+
+<div class="gap"></div>
+
+
+
+<p class="pop" id="pop">
+    comments</p>
+
+<div id="down"
+    style="margin:auto;width:25px;transform: rotate(90deg);height:50px;cursor:pointer;color:black; font-size:35px;"
+    onclick="showComment()" onmousedown="closeComment()">
+    &#10092 </div>
+
+
+<div class="commFlex" id="comments" style="opacity: 0;transform: translateY(20%) ;transition: .5s ;position:fixed;">
+    
+
+    
+</div>
+<div class="gap"></div>
+
+
+
+<script src="assets/js/script.js"></script>
